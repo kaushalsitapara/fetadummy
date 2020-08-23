@@ -28,7 +28,7 @@ class _referralState extends State<referral> {
           ]),
         ),
         body: TabBarView(children: [
-          NewReferral(),
+          member(),
           Referral(),
         ]),
       ),

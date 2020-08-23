@@ -4,7 +4,6 @@ import 'views/directory.dart';
 import 'views/homepage.dart';
 
 void main() {
-
   runApp(MyApp());
 }
 
@@ -13,6 +12,22 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      theme: ThemeData(
+        backgroundColor: Colors.white,
+        accentColor: Colors.red,
+        tabBarTheme: TabBarTheme(labelColor: Colors.black),
+        bottomAppBarColor: Colors.grey[300],
+        primaryTextTheme: TextTheme(
+          headline6: TextStyle(color: Colors.black),
+        ),
+        appBarTheme: AppBarTheme(
+          color: Colors.white,
+          textTheme: TextTheme(
+            headline6: TextStyle(
+                color: Colors.black, fontSize: 20, fontWeight: FontWeight.bold),
+          ),
+        ),
+      ),
       title: "Cmata App",
       home: HomePage(),
     );

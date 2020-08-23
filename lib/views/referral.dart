@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:playground/views/ref/newrefereal.dart';
+import 'package:playground/views/ref/referral.dart';
 import 'package:playground/views/referralstructures.dart';
 
 class referral extends StatefulWidget {
@@ -9,7 +11,7 @@ class referral extends StatefulWidget {
 class _referralState extends State<referral> {
   @override
   Widget build(BuildContext context) {
-    DefaultTabController(
+   return DefaultTabController(
       length: 2,
       child: Scaffold(
         appBar: AppBar(
@@ -26,8 +28,8 @@ class _referralState extends State<referral> {
           ]),
         ),
         body: TabBarView(children: [
-          refwin(),
-          refwin(),
+          NewReferral(),
+          Referral(),
         ]),
       ),
     );
